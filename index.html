@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pat Castro Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<body>
+    <!-----------------------------------Navigation------------------------------------>
+    <nav id="nav">
+        <div class="logo">PAT CASTRO</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Pat Castro</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">EXPERIENCE</a></li>
+            <li><a href="#project" onclick="toggleMenu()">PROJECTS</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">CONTACTS</a></li>
+          </div>
+        </div>
+    </nav>
+
+    <!-----------------------------------PROFILE------------------------------------>
+    <section id = "profile">
+        <div class = "profile-img">
+            <img src="assets/pat1.png">
+        </div>
+
+        <div class="profile-text">
+            <h3>Hello I am</h3>
+            <h1>Patrick Josuah Castro</h1>
+            <h2>Information System Student</h2>
+            <button class="btn">Download CV</button>
+            <button class="btn">My LinkedIn</button>
+            <div class = "social">
+                <a href="https://www.facebook.com/josuahcastro4"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/_impat"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/_patissss/"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------------------------ABOUT------------------------------------>
+    <section class="about" id="about"></section>
+        <p class="section__text__p1">Know More</p>
+        <h1 class="title">ABOUT ME</h1>
+
+
+
+
+
+
+    <!-----------------------------------SKILLS------------------------------------>
+    <section class="skills" id="skills">
+        <p class="section__text__p1">This is My</p>
+        <h1 class="title">SKILLS</h1>
+        <div class="skill-container">
+            <div class="skill-items">
+                <div class="skill-box">
+                    <div class = "skill-img">
+                        <img src="assets/skills/c.png" alt="">
+                        <h4>C</h4>
+                        <p>Intermediate</p>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class = "skill-img">
+                        <img src="assets/skills/cpp.png" alt="">
+                        <h4>C++</h4>
+                        <p>Intermediate</p>
+
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class = "skill-img">
+                        <img src="assets/skills/html.png" alt="">
+                        <h4>HTML</h4>
+                        <p>Intermediate</p>
+
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class = "skill-img">
+                        <img src="assets/skills/css.png" alt="">
+                        <h4>CSS</h4>
+                        <p>Intermediate</p>
+
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class = "skill-img">
+                        <img src="assets/skills/js.png" alt="">
+                        <h4>JavaScript</h4>
+                        <p>Basic</p>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class = "skill-img">
+                        <img src="assets/skills/java.png" alt="">
+                        <h4>Java</h4>
+                        <p>Intermediate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <script src="script.js"></script>
+</body>
+</html>
