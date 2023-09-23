@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    background: #26292F;
 }
 
 body {
@@ -42,7 +43,7 @@ li {
 .nav-links a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     padding: 8px 10px;
 }
@@ -52,14 +53,14 @@ li {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: rgb(121, 121, 121);
+    background-color: rgb(250, 193, 6);
     bottom: -9px;
     left: 0;
     transition: ease .4s;
 }
 
 .nav-links a:hover{
-    color: rgb(121, 121, 121);
+    color: rgb(250, 193, 6);
 }
 
 .nav-links a:hover::after{
@@ -69,6 +70,7 @@ li {
 .logo {
     font-size: 2rem;
     font-weight: 700;
+    color: rgb(250, 193, 6);
 }
 
 .logo:hover {
@@ -98,7 +100,7 @@ li {
   .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: rgb(250, 193, 6);
     transition: all 0.3 ease-in-out;
   }
   
@@ -107,7 +109,7 @@ li {
     top: 100%;
     right: 0;
     padding: 10px;
-    background-color: white;
+    background-color: transparent;
     max-height: 0;
     width: fit-content;
     overflow: hidden;
@@ -118,7 +120,7 @@ li {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
   }
@@ -128,7 +130,7 @@ li {
         position: absolute;
         width: 0;
         height: 2px;
-        background-color: rgb(121, 121, 121);
+        background-color: rgb(250, 193, 6);
         bottom: -1px;
         left: 0;
         transition: ease .4s;
@@ -216,14 +218,14 @@ li {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    background: rgb(48, 47, 47);
+    border: rgb(250, 193, 6) 2px solid;
     font-size: 22px;
-    color: white;
+    color: rgb(250, 193, 6);
     margin: 10px;
 }
 .social a:hover{
     transform: scale(1.1);
-    background: rgb(141, 141, 141);
+    background: #26292F;
     transition: ease.5s;
 }
 
@@ -232,14 +234,20 @@ li {
   height: 340px;
   width: 340px;
   margin: auto 0;
+  border-radius: 300px;
 }
 
 .profile-img img{
     border-radius: 300px;
-    background-color: #26292F;
-    border: 3px #26292F solid;
-    box-shadow:  -5px -5px 30px #d6d6d6,
-    10px 10px 20px #868686;
+    background-color: white;
+    box-shadow:  -5px -5px 30px #3f3f3f,
+    10px 10px 20px #303030;
+}
+
+.profile-img img:hover{
+  transform: scale(1.1);
+  background: transparent;
+  transition: .5s;
 }
 
 .profile-text{
@@ -250,51 +258,76 @@ li {
 .profile-text h1{
     font-size: 4rem;
     font-weight: 600;
-    margin: 5px 0px 25px;
+    margin: 5px 0px 15px;
     line-height: 1.1;
+    color: rgb(250, 193, 6);
 }
 .profile-text h3{
-    color: rgb(80, 80, 80);
+    color: white;
     font-size: 2vh;
     font-weight: 500;
 }
 
 .profile-text h2{
     font-size: 2rem;
-    color:rgb(65, 65, 65);
+    color:white;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .btn{
     display: inline-flex;
     padding: 15px 20px;
     background: transparent;
-    border: 2px solid black;
-    border-radius: 30px;
-    color: black;
+    border: 2px solid rgb(250, 193, 6);
+    border-radius: 5px;
+    color: rgb(250, 193, 6);
     letter-spacing: 1px;
     font-family: 'Jost', sans-serif;
     font-size: 1rem;
     font-weight: 700;
     transition: ease .50s;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 45px 20px;
 }
 
 .btn:hover {
     transform: scale(1.1);
-    background: rgb(131, 130, 130);
+    background: rgb(92, 92, 92);
     transition: .5s;
 }
 
 /*About*/
 #about {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  grid-gap: 2rem;
 }
 
+.about-img img{
+  max-width: 100%;
+  width: 440px;
+  height: auto;
+}
 
+.about-text h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 8px 0px 25px;
+  line-height: 1.1;
+}
+.about-text h3{
+  font-size: 20px;
+  font-weight: 500;
 
-
+}
+.about-text h4{
+  max-width: 550px;
+  font-size: 1rem;
+  color: gray;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
 /*Skills*/
 #skills {
     position: relative;
