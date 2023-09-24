@@ -19,3 +19,15 @@
     }
     
   }
+
+  @media(max-width: 768px){
+    section{
+      margin: 0 3rem;
+    }
+    .row{
+      grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+      margin-top: 30px;
+    }
+  }
