@@ -7,6 +7,9 @@
     .about-containers {
       flex-wrap: wrap;
     }
+    section{
+      height: fit-content;
+    }
   }
   
   @media screen and (max-width: 1200px) {
@@ -18,11 +21,16 @@
       display: flex;
     }
     
+    section{
+      margin: 0 3rem;
+      height: fit-content;
+    }
   }
 
   @media(max-width: 768px){
     section{
       margin: 0 3rem;
+      height: fit-content;
     }
     .row{
       grid-template-columns: 1fr;
