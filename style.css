@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 
 body {
     font-family: "Jost", sans-serif;
-    background-color: #26292F;
+    background: linear-gradient(to left, #26292F, #070708);
 }
 
 html {
@@ -94,120 +94,122 @@ li {
     justify-content: space-between;
     height: 24px;
     width: 30px;
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
   
-  .hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: rgb(250, 193, 6);
-    transition: all 0.3 ease-in-out;
-  }
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #fac106;
+  transition: all 0.3 ease-in-out;
+}
   
-  .menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    padding: 10px;
-    background-color: transparent;
-    max-height: 0;
-    width: fit-content;
-    overflow: hidden;
-  }
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  max-height: 0;
+  width: fit-content;
+  overflow: hidden;
+}
 
-  .menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-  }
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
   
-  .menu-links a::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        background-color: rgb(250, 193, 6);
-        bottom: -1px;
-        left: 0;
-        transition: ease .4s;
-    }
+.menu-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fac106;
+  bottom: -1px;
+  left: 0;
+  transition: ease .4s;
+}
 
-  .menu-links a:hover::after{
-    width: 100%;
-  }
+.menu-links a:hover::after{
+  width: 100%;
+}
 
-  .menu-links li {
-    list-style: none;
-    }
+.menu-links li {
+  list-style: none;
+}
   
-  .menu-links.open {
-    max-height: 300px;
-  }
+.menu-links.open {
+  max-height: 300px;
+}
   
-  .hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-  }
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
   
-  .hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-  }
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
   
-  .hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-  }
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
   
-  .hamburger-icon span:first-child {
-    transform: none;
-  }
+.hamburger-icon span:first-child {
+  transform: none;
+}
   
-  .hamburger-icon span:first-child {
-    opacity: 1;
-  }
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
   
-  .hamburger-icon span:first-child {
-    transform: none;
-  }
+.hamburger-icon span:first-child {
+  transform: none;
+}
 
 /*Section*/
-  section {
-    padding-top: 1rem;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-  }
+section {
+  padding-top: 1rem;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
 
-  .section__text{
-    align-self: center;
-    text-align: center;
-  }
+.section__text{
+  align-self: center;
+  text-align: center;
+}
 
-  .section-container {
-    gap: 4rem;
-    height: 75%;
-  }
+.section-container {
+  gap: 4rem;
+  height: 75%;
+}
 
 /* Profile */
 #profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
+  display: relative;
+  align-items: center;
+  gap: 5rem;
 }
 
 .title{
   position: relative;
 }
 .title h2{
-  font-family: 'Poppins', sans-serif;
-  font-size: 6rem;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 4.5rem;
   text-align: center;
-  text-transform: capitalize;
-  font-weight: 1000;
-  color: #4e4e4e;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fac106;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
 }
 .title div{
   position: absolute;
@@ -217,103 +219,118 @@ li {
   width: 100%;
   transform: translate(-50%, -50%);
 }
-.title div h3{
-  font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgb(250, 193, 6);
+
+.profile-contain{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20vh;
+}
+
+.profile-box{
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow:  -5px -5px 30px #1d1d1d,
+  10px 10px 30px #1d1d1d;
+  text-align: center;
+  padding: 40px 100px;
+  color: #fff;
+  position: relative;
 }
 
 .social{
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .social a{
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    text-decoration: none;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    border: rgb(250, 193, 6) 2px solid;
-    font-size: 22px;
-    color: rgb(250, 193, 6);
-    margin: 10px;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 20%;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #c4c3c3;
+  margin: 10px 5px;
 }
 .social a:hover{
-    transform: scale(1.1);
-    background: #555657;
-    transition: ease.5s;
+  transform: scale(1.1);
+  color: #fac106;
+  transition: ease.5s;
 }
 
 .profile-img{
   display: flex;
-  height: 340px;
-  width: 340px;
+  text-align: center;
+  height: 300px;
+  width: 300px;
   margin: auto 0;
   border-radius: 300px;
 }
 
 .profile-img img{
-    border-radius: 300px;
-    background-color: white;
-    box-shadow:  -5px -5px 30px #3f3f3f,
-    10px 10px 20px #303030;
+  border-radius: 300px;
+  background: radial-gradient(circle, #575757, #161616);
+  box-shadow:  -5px -5px 30px #1d1d1d;
 }
 
 .profile-img img:hover{
   transform: scale(1.1);
-  background: transparent;
+  background: radial-gradient(circle, #a5a5a5, #161616);
   transition: .5s;
 }
 
 .profile-text{
-    align-self: center;
-    text-align: center;
+  align-self: center;
+  text-align: center;
 }
 
-.profile-text h1{
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 5px 0px 15px;
-    line-height: 1.1;
-    color: rgb(250, 193, 6);
+.profile-text h4{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 20px 0 0 0;
+  line-height: 1.1;
+  color: #ffffff;
 }
 .profile-text h3{
-    color: white;
-    font-size: 2vh;
-    font-weight: 500;
+  color: #fac106;
+  font-size: 3vh;
+  margin: 0 0 10px 0;
+  font-weight: 800;
 }
 
-.profile-text h2{
-    font-size: 2rem;
-    color:white;
-    font-weight: 600;
-    margin-bottom: 35px;
+.profile-text p{
+  font-size: 1rem;
+  color:#dddddd;
+  font-weight: 400;
 }
 
 .btn{
-    display: inline-flex;
-    padding: 15px 20px;
-    background: transparent;
-    border: 2px solid rgb(250, 193, 6);
-    border-radius: 5px;
-    color: rgb(250, 193, 6);
-    letter-spacing: 1px;
-    font-family: 'Jost', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: ease .50s;
-    margin: 0px 20px 45px 20px;
+  width: 140px;
+  display: inline-flex;
+  padding: 10px 10px;
+  background: transparent;
+  border: 2px solid #636363;
+  border-radius: 5px;
+  color: #c4c3c3;
+  letter-spacing: 1px;
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: ease .50s;
+  margin: 10px 3px 5px 3px;
+  justify-content: center;
 }
 
 .btn:hover {
-    transform: scale(1.1);
-    background: rgb(92, 92, 92);
-    transition: .5s;
+  transform: scale(1.1);
+  background: #5c5c5c;
+  transition: .5s;
 }
 
 /*About*/
@@ -335,7 +352,7 @@ li {
 }
 
 .col header.about-title{
-  font-family: 'Jost', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   color: rgb(250, 193, 6);
   font-size: 1.4rem;
   padding: 0px 0px 20px 30px;
@@ -404,14 +421,15 @@ li {
 .about-box1 h2{
   position: relative;
   color: rgb(250, 193, 6);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   letter-spacing: 3px;
 }
 
 .about-box h2{
   position: relative;
+  font-family: 'Bebas Neue', sans-serif;
   color: rgb(250, 193, 6);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   letter-spacing: 3px;
 }
 
