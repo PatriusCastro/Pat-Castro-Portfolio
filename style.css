@@ -6,7 +6,8 @@
 
 body {
     font-family: "Jost", sans-serif;
-    background: linear-gradient(to left, #26292F, #070708);
+    background: url(../assets/bg.jpg);
+    background-size: contain;
 }
 
 html {
@@ -20,32 +21,32 @@ p {
 /*Desktop Nav*/
 nav,
 .nav-links {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    font-size: 24px;
-    position: relative;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-size: 24px;
+  position: relative;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 4vh;
-    transition: .3s;
-    background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 4vh;
+  transition: .3s;
+  background-color: transparent;
 }
 
 li {
-    position: relative;
+  position: relative;
 }
 
 .nav-links a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    padding: 8px 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 8px 10px;
 }
 
 .nav-links a::after {
@@ -53,14 +54,14 @@ li {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: rgb(250, 193, 6);
+    background-color: #fac106;
     bottom: -9px;
     left: 0;
     transition: ease .4s;
 }
 
 .nav-links a:hover{
-    color: rgb(250, 193, 6);
+    color: #fac106;
 }
 
 .nav-links a:hover::after{
@@ -201,6 +202,17 @@ section {
 .title{
   position: relative;
 }
+
+.title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  height: 2px;
+  margin: 2px auto;
+  background: linear-gradient(to right, transparent, #727272, #fac106, #727272, transparent);
+}
+
 .title h2{
   font-family: 'Dela Gothic One', cursive;
   font-size: 4.5rem;
@@ -231,14 +243,16 @@ section {
 }
 
 .profile-box{
-  background-color: transparent;
-  border-radius: 20px;
-  box-shadow:  -5px -5px 30px #1d1d1d,
-  10px 10px 30px #1d1d1d;
+  border-radius: 10px;
+  border: #161616 2px solid;
+  background: linear-gradient(to right, #2b2b2b94, #4242429f, #2b2b2b94);
+  box-shadow: rgb(0,0,0,0.7) 5px 10px 10px ,rgb(0,0,0,0.3) -5px -5px 20px;
   text-align: center;
   padding: 40px 100px;
   color: #fff;
   position: relative;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .social{
@@ -248,15 +262,15 @@ section {
 
 .social a{
   display: inline-flex;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   text-decoration: none;
   border-radius: 20%;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
-  color: #c4c3c3;
-  margin: 10px 5px;
+  font-size: 24px;
+  color: #b6b6b6;
+  margin: 5px 5px;
 }
 .social a:hover{
   transform: scale(1.1);
@@ -266,7 +280,6 @@ section {
 
 .profile-img{
   display: flex;
-  text-align: center;
   height: 300px;
   width: 300px;
   margin: auto 0;
@@ -275,13 +288,13 @@ section {
 
 .profile-img img{
   border-radius: 300px;
-  background: radial-gradient(circle, #575757, #161616);
-  box-shadow:  -5px -5px 30px #1d1d1d;
+  background: transparent;
+  box-shadow:  -5px -5px 10px #1d1d1d, #1d1d1d;
 }
 
 .profile-img img:hover{
   transform: scale(1.1);
-  background: radial-gradient(circle, #a5a5a5, #161616);
+  background: transparent;
   transition: .5s;
 }
 
@@ -295,41 +308,44 @@ section {
   font-weight: 400;
   margin: 20px 0 0 0;
   line-height: 1.1;
-  color: #ffffff;
+  color: #b6b6b6;
 }
 .profile-text h3{
   color: #fac106;
-  font-size: 3vh;
+  font-size: 3.2vh;
   margin: 0 0 10px 0;
   font-weight: 800;
 }
 
 .profile-text p{
   font-size: 1rem;
-  color:#dddddd;
+  color:#b6b6b6;
+  margin: 0 0 10px 0;
   font-weight: 400;
 }
 
 .btn{
-  width: 140px;
+  width: max-content;
   display: inline-flex;
-  padding: 10px 10px;
-  background: transparent;
-  border: 2px solid #636363;
-  border-radius: 5px;
-  color: #c4c3c3;
+  padding: 8px 12px;
+  background: #5f5f5f;
+  border: transparent;
+  border-radius: 30px;
+  color: #e9e6e6;
   letter-spacing: 1px;
   font-family: 'Jost', sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  transition: ease .50s;
   margin: 10px 3px 5px 3px;
+  transition: ease .50s;
   justify-content: center;
 }
 
 .btn:hover {
-  transform: scale(1.1);
-  background: #5c5c5c;
+  color: #161616;
+  border: transparent;
+  cursor: pointer;
+  background: linear-gradient(to right, #fac106, #facb33, #fac106);
   transition: .5s;
 }
 
@@ -350,7 +366,9 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
 }
-
+.col{
+  padding: 20px;
+}
 .col header.about-title{
   font-family: 'Bebas Neue', sans-serif;
   color: rgb(250, 193, 6);
@@ -368,7 +386,7 @@ section {
   position: relative;
   padding: 20px;
   border: 1px solid beige;
-  background-color: transparent;
+  background: linear-gradient(to right, #2b2b2b94, #4242429f, #2b2b2b94);
   cursor: pointer;
   transition: all 0.4s;
   margin-bottom: 20px;
@@ -389,33 +407,24 @@ section {
   top: 0;
   background-color: rgb(250, 193, 6);
   border: 2px solid white;
+
 }
 
-.col .about-contents .about-box1{
+.col .about-contents1 .about-box1{
   position: relative;
   padding: 20px;
-  border: 1px solid beige;
-  background-color: transparent;
-  cursor: pointer;
+  background: linear-gradient(to right, #2b2b2b94, #4242429f, #2b2b2b94);
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, beige, transparent, transparent, transparent, transparent, transparent, beige);
+  border-image-slice: 1;
+  border-image-width: 1;
+  border-image-outset: 0; 
+  cursor: default;
   transition: all 0.4s;
-  margin-bottom: 20px;
-}
-
-.col .about-contents .about-box1:hover{
-  box-shadow: 0px 3px 12px 0px #26292F;
-  border: 1px solid transparent;
-}
-
-.col .about-contents .about-box1::before{
-  content: '';
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  right: calc(100% + 22px);
-  top: 0;
-  background-color: rgb(250, 193, 6);
-  border: 2px solid white;
+  pad: 10px 10px;
+  margin: 5px 5px;
+  box-shadow: rgb(0,0,0) 5px 10px 10px ,rgb(0,0,0, 0.6) -5px -5px 20px;
 }
 
 .about-box1 h2{
@@ -475,24 +484,24 @@ section {
 }
 
 /*Skills*/
-.skills{
+#skills{
   display: relative;
 }
-.skills .skill-text{
+.skill-text{
   width: 70%;
   margin: 1.5rem auto;
   text-align: center;
   color: white;
 }
-.skills .skill-row{
+.skill-row{
   margin: 1rem 0;
   padding-bottom: 5rem;
 }
-.skills .skill-item{
+.skill-item{
   padding: 0.5rem 0;
   margin: 0.3rem 0;
 }
-.skills .skill-item-text{
+.skill-item-text{
   display: flex;
   justify-content: flex-start;
   font-weight: 600;
@@ -500,56 +509,227 @@ section {
   position: relative;
   color: white;
 }
-.skills .skill-item-text span:last-child{
+.skill-item-text span:last-child{
   position: absolute;
 }
-.skills .skill-item-text .skill-w-90{
-  margin-left: 85%;
+.skill-item-text .skill-w-40{
+  margin-left: 35%;
 }
-.skills .skill-item-text .skill-w-75{
-  margin-left: 70%;
+.skill-item-text .skill-w-35{
+  margin-left: 30%;
 }
-.skills .skill-item-text .skill-w-85{
-  margin-left: 80%;
+.skill-item-text .skill-w-25{
+  margin-left: 20%;
 }
-.skills .skill-item-text .skill-w-80{
-  margin-left: 75%;
-}
-.skills .skill-item-text .skill-w-20{
+.skill-item-text .skill-w-20{
   margin-left: 15%;
 }
-.skills .skill-item-text .skill-w-95{
-  margin-left: 90%;
+.skill-item-text .skill-w-30{
+  margin-left: 25%;
 }
 .skill-progress{
   margin: .5rem 0;
   border-radius: 10px;
   height: 6px;
   width: 100%;
-  background-color: #4e4e4e;
+  background: linear-gradient(to right, #a0a0a094, #6464649f, #a0a0a094);
   overflow: hidden;
 }
 .skill-progress-bar{
-  background: rgb(250, 193, 6);
+  background: linear-gradient(to right, #886800, #fac106);
   height: 100%;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.skill-progress-bar.w-90{
-  width: 90%;
+.skill-progress-bar.w-40{
+  width: 40%;
 }
-.skill-progress-bar.w-75{
-  width: 75%;
+.skill-progress-bar.w-35{
+  width: 35%;
 }
-.skill-progress-bar.w-85{
-  width: 85%;
-}
-.skill-progress-bar.w-80{
-  width: 80%;
+.skill-progress-bar.w-25{
+  width: 25%;
 }
 .skill-progress-bar.w-20{
   width: 20%;
 }
-.skill-progress-bar.w-95{
-  width: 95%;
+.skill-progress-bar.w-30{
+  width: 30%;
 }
+
+/* Experience */
+#experience{
+ display: relative;
+ justify-content: center;
+ align-items: center;
+}
+
+header.exp-title{
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(250, 193, 6);
+  font-size: 1.4rem;
+  padding: 0px 0px 20px 30px;
+  letter-spacing: 5px;
+}
+
+.exp-contents{
+  padding: 0px 30px;
+  border-left: 2px solid gray;
+}
+
+.exp-box{
+  position: relative;
+  padding: 20px;
+  border: 1px solid beige;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+
+.exp-box:hover{
+  box-shadow: 0px 3px 12px 0px #26292F;
+  border: 1px solid transparent;
+}
+
+.exp-box::before{
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: rgb(250, 193, 6);
+  border: 2px solid white;
+}
+
+.exp-box h2{
+  position: relative;
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(250, 193, 6);
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+}
+
+.exp-box h4{
+  position: relative;
+  color: rgb(206, 206, 206);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.exp-box1 h4{
+  position: relative;
+  color: rgb(206, 206, 206);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.exp-box h3{
+  position: relative;
+  text-align: justify;
+  color: rgb(202, 200, 200);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.exp-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.exp-img img{
+  margin-top: 30px;
+  width: 300px;
+  height: auto;
+}
+
+.exp-box1{
+  position: relative;
+  padding: 20px;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, beige, transparent, transparent, transparent, transparent, transparent, beige);
+  border-image-slice: 1;
+  border-image-width: 1;
+  border-image-outset: 0; 
+  cursor: default;
+  transition: all 0.4s;
+  pad: 10px 10px;
+  margin: 5px 5px;
+  box-shadow: rgb(0,0,0) 5px 10px 10px ,rgb(0,0,0, 0.6) -5px -5px 20px;
+}
+
+/* PROJECTS */
+#project{
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-contain{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0px;
+}
+
+.proj-card{
+  max-width: 300px;
+  height: 215px;
+  position: relative;
+  background: linear-gradient(to right, #2b2b2b94, #4242429f, #2b2b2b94);
+  margin: 40px 60px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, beige, transparent, transparent, transparent, transparent, transparent, beige);
+  border-image-slice: 1;
+  border-image-width: 1;
+  border-image-outset: 0;
+  box-shadow: 0 5px 202px #00000066;
+  transition: 0.3s ease-in-out;
+}
+
+.proj-card:hover{
+  height: 420px;
+}
+
+.proj-imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  box-shadow: 0 5px 202px #00000031;
+}
+
+.proj-imgBx img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.proj-content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.proj-card:hover .proj-content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
