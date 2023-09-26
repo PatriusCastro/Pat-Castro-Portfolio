@@ -1,18 +1,98 @@
-@media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
+  @media screen and (max-width: 576px) {
+    #nav {
+      display: none;
     }
   
-    .about-containers {
-      flex-wrap: wrap;
+    #hamburger-nav {
+      display: flex;
     }
+    
     section{
+      margin: 0 3rem;
       height: fit-content;
+    }
+    .row{
+      grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+      margin-top: 30px;
+    }
+
+    /* Profile */
+    .title h2{
+      font-size: 2rem;
+    }
+
+    .profile-box{
+      padding: 30px 8px;
+    }
+    
+    .profile-img{
+      display: none;
+    }
+
+    /* About */
+    .col header.about-title{
+      font-size: 1rem;
+      text-align: center;
+      padding: 0px 0px 10px 10px;
+    }
+
+    .col .about-contents .about-box{
+      padding: 10px;
+    }
+
+    .about-box1 h2, .about-box h2{
+      font-size: 1.3rem;
+    }
+
+    .about-box1 h4, .about-box h4{
+      font-size: 1rem;
+    }
+
+    .about-box1 p, .about-box h3{
+      font-size: 0.9rem;
+    }
+
+    .about-img{
+      float: none;
+      align-items: center;
+      margin-left: 30px;
+    }
+
+    .about-img img{
+      height: 200px;
+      width: auto;
+      border-radius: 200px;
+    }
+    
+    /* Skills */
+  }
+  
+  /* For medium screens */
+  @media screen and (max-width: 768px) {
+    #nav {
+      display: none;
+    }
+  
+    #hamburger-nav {
+      display: flex;
+    }
+
+    section{
+      margin: 0 3rem;
+      height: fit-content;
+    }
+    .row{
+      grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+      margin-top: 30px;
     }
   }
   
-  @media screen and (max-width: 1200px) {
+  /* For large screens */
+  @media screen and (max-width: 992px) {
     #nav {
       display: none;
     }
@@ -26,16 +106,37 @@
       height: fit-content;
     }
   }
-
-  @media(max-width: 768px){
+  
+  /* For extra large screens */
+  @media screen and (max-width: 1200px) {
+    #nav {
+      display: none;
+    }
+  
+    #hamburger-nav {
+      display: flex;
+    }
+    
     section{
       margin: 0 3rem;
       height: fit-content;
     }
-    .row{
-      grid-template-columns: 1fr;
+
+    /* PROFILE */
+
+
+  }
+
+  @media screen and (max-width: 1400px) {
+    #profile {
+      height: 83vh;
+      margin-bottom: 6rem;
     }
-    .row .col:nth-child(2){
-      margin-top: 30px;
+  
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    section{
+      height: fit-content;
     }
   }
