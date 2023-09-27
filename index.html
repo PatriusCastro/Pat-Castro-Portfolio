@@ -1,379 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pat Castro Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
     <!-----------------------------------NAVIGATION------------------------------------>
     <nav id="nav">
-        <div class="logo">PAT CASTRO</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#project">PROJECTS</a></li>
-                <li><a href="#contact">CONTACTS</a></li>
-            </ul>
-        </div>
+      <div class="logo">PAT CASTRO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#contact">CONTACTS</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">PAT CASTRO</div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">EXPERIENCE</a></li>
-            <li><a href="#project" onclick="toggleMenu()">PROJECTS</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">CONTACTS</a></li>
-          </div>
+      <div class="logo">PAT CASTRO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">ABOUT</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">SKILLS</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">EXPERIENCE</a></li>
+          <li><a href="#project" onclick="toggleMenu()">PROJECTS</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">CONTACTS</a></li>
+        </div>
+      </div>
     </nav>
     <!--------------------------------END OF NAVIGATION------------------------------------>
 
     <!------------------------------------PROFILE------------------------------------>
-    <section id = "profile">
-        <div class="profile-contain">
-            <div class = "profile-box">
-                <div class="profile-img">
-                    <img src="assets/pat1.png">
-                </div>
-                <div class="profile-text">
-                    <h4>Hello, I am</h4>
-                    <h3>PAT CASTRO</h3>
-                    <p>Information System Student at TUP-Manila</p>
-                    <div class = "social">
-                        <a href="https://www.facebook.com/josuahcastro4"><i class='bx bxl-facebook' ></i></a>
-                        <a href="https://twitter.com/_impat"><i class='bx bxl-twitter' ></i></a>
-                        <a href="https://www.instagram.com/_patissss/"><i class='bx bxl-instagram' ></i></a>
-                        <a href=""><i class='bx bxl-discord'></i></a>
-                        <a href=""><i class='bx bxl-github' ></i></a>
-                    </div>
-                    <button class="btn">Download CV</button>
-                    <button class="btn">My LinkedIn</button>
-                </div>
-                <div class="blob"></div>
+    <section id="profile">
+      <div class="profile-contain">
+        <div class="profile-box">
+          <div class="profile-img">
+            <img src="assets/pat1.png" />
+          </div>
+          <div class="profile-text">
+            <h4>Hello, I am</h4>
+            <h3>PAT CASTRO</h3>
+            <p>Information System Student at TUP-Manila</p>
+            <div class="social">
+              <a href="https://www.facebook.com/josuahcastro4"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+              <a href="https://twitter.com/_impat"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/_patissss/"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/patrick-josuah-castro-6aba2a27a/"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+              <a href="https://github.com/PatriusCastro"
+                ><i class="bx bxl-github"></i
+              ></a>
             </div>
+            <button class="btn" onclick="window.open('./assets/Castro_CV.pdf')">
+              Download CV
+            </button>
+            <button class="btn" onclick="location.href='./#contact'">
+              Contact Me
+            </button>
+          </div>
         </div>
-    
-        
+      </div>
     </section>
     <!--------------------------------END OF PROFILE------------------------------------>
 
     <!------------------------------------ABOUT------------------------------------>
     <section class="about" id="about">
-        <div class="title">
-            <h2>about</h2>
-        </div>
-        <div class="about-container">
-            <div class="row">
-                <div class="col">
-                    <header class="about-title">
-                        <h2>WHO AM I?</h2>
-                    </header>
+      <div class="title">
+        <h2>about</h2>
+      </div>
+      <div class="about-container">
+        <div class="row">
+          <div class="col">
+            <header class="about-title">
+              <h2>WHO AM I?</h2>
+            </header>
 
-                    <div class="about-contents1">
-                        <div class="about-box1">
-                            <div class="about-img">
-                                <img src="assets/pat2.png">
-                            </div>
-                            <p><br>Hi I'm Pat,  20 years old a third year student at Technological University of the Philippines
-                                taking a course of Bachelor of Science in Information Science, and I am currently working in a
-                                fastfood chain. When I graduated, I plan to work as a web developer or data analyst.
-                                I'm currently working on some projects in HTML, CSS, and JAVASCRIPT, and 
-                                I'd like to specialize in front-end development because I enjoy designing.</p>
-                            <h4><br><br>"Once we accept our limits, we go beyond them."<br> - Albert Einstein</h4>
-                        </div> 
-                    </div>  
-                </div> 
-                
-                <div class="col">
-                    <header class="about-title">
-                        <h2>EDUCATIONAL BACKGROUND</h2>
-                    </header>
-
-                    <div class="about-contents">
-                        <div class="about-box">
-                            <h2>2009 - 2015</h2>
-                            <h4>ELEMENTARY</h4>
-                            <h3>BAYANAN ELEMENTARY SCHOOL</h3>
-                        </div>
-                        <div class="about-box">
-                            <h2>2015 - 2019</h2>
-                            <h4>JUNIOR HIGH SCHOOL</h4>
-                            <h3>BACOOR NATIONAL HIGH SCHOOL</h3>
-                        </div>
-                        <div class="about-box">
-                            <h2>2019 - 2021</h2>
-                            <h4>SENIOR HIGH SCHOOL</h4>
-                            <h3>UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA - MOLINO</h3>
-                        </div>
-                        <div class="about-box">
-                            <h2>2021 - PRESENT</h2>
-                            <h4>COLLEGE</h4>
-                            <h3>BACHELOR OF SCIENCE IN INFORMATION SYSTEM</h3>
-                            <h3>TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES - MANILA</h3>
-                        </div>
-                    </div>
+            <div class="about-contents1">
+              <div class="about-box1">
+                <div class="about-img">
+                  <img src="assets/pat2.png" />
                 </div>
+                <p>
+                  <br />Hi I'm Pat, 20 years old a third year student at
+                  Technological University of the Philippines taking a course of
+                  Bachelor of Science in Information Science, and I am currently
+                  working in a fastfood chain. When I graduated, I plan to work
+                  as a web developer or data analyst. I'm currently working on
+                  some projects in HTML, CSS, and JAVASCRIPT, and I'd like to
+                  specialize in front-end development because I enjoy designing.
+                </p>
+                <h4>
+                  <br />"Once we accept our limits, we go beyond them."<br />
+                  - Albert Einstein
+                </h4>
+              </div>
             </div>
-        </div> 
+          </div>
+
+          <div class="col">
+            <header class="about-title">
+              <h2>EDUCATIONAL BACKGROUND</h2>
+            </header>
+
+            <div class="about-contents">
+              <div class="about-box">
+                <h2>2009 - 2015</h2>
+                <h4>ELEMENTARY</h4>
+                <h3>BAYANAN ELEMENTARY SCHOOL</h3>
+              </div>
+              <div class="about-box">
+                <h2>2015 - 2019</h2>
+                <h4>JUNIOR HIGH SCHOOL</h4>
+                <h3>BACOOR NATIONAL HIGH SCHOOL</h3>
+              </div>
+              <div class="about-box">
+                <h2>2019 - 2021</h2>
+                <h4>SENIOR HIGH SCHOOL</h4>
+                <h3>UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA - MOLINO</h3>
+              </div>
+              <div class="about-box">
+                <h2>2021 - PRESENT</h2>
+                <h4>COLLEGE</h4>
+                <h3>BACHELOR OF SCIENCE IN INFORMATION SYSTEM</h3>
+                <h3>TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES - MANILA</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--------------------------------END OF ABOUT------------------------------------>
 
     <!------------------------------------SKILLS------------------------------------>
     <section class="skills" id="skills">
-        <div class="title">
-            <h2>skills</h2>
+      <div class="title">
+        <h2>skills</h2>
+      </div>
+
+      <p class="skill-text">
+        Proficiency in computer skills is crucial in today's digitally-driven
+        world, as it empowers individuals to navigate, communicate, and create
+        within the ever-evolving landscape of technology.
+      </p>
+      <div class="skill-row">
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>Photoshop</span>
+            <span class="skill-w-35">35%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-35"></div>
+          </div>
         </div>
-        
-        <p class = "skill-text">Proficiency in computer skills is crucial in today's digitally-driven world, as it empowers individuals to navigate, communicate, and create within the ever-evolving landscape of technology.</p>
-        <div class = "skill-row">
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>Photoshop</span>
-                    <span class = "skill-w-35">35%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-35"></div>
-                </div> 
-            </div>
-        
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>Microsoft Office</span>
-                    <span class = "skill-w-40">40%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-40"></div>
-                </div>
-            </div>
 
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>C</span>
-                    <span class = "skill-w-25">25%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-25"></div>
-                </div>
-            </div>
-
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>C++</span>
-                    <span class = "skill-w-25">25%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-25"></div>
-                </div>
-            </div>
-
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>Python</span>
-                    <span class = "skill-w-20">20%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-20"></div>
-                </div>
-            </div>
-
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>HTML</span>
-                    <span class = "skill-w-40">40%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-40"></div>
-                </div>
-            </div>
-
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>CSS</span>
-                    <span class = "skill-w-40">40%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-40"></div>
-                </div>
-            </div>
-
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>Javascript</span>
-                    <span class = "skill-w-20">20%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-20"></div>
-                </div>
-            </div>
-
-            <div class = "skill-item">
-                <div class = "skill-item-text">
-                    <span>Java</span>
-                    <span class = "skill-w-30">30%</span>
-                </div>
-                <div class = "skill-progress">
-                    <div class = "skill-progress-bar w-30"></div>
-                </div>
-            </div>
-            
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>Microsoft Office</span>
+            <span class="skill-w-40">40%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-40"></div>
+          </div>
         </div>
+
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>C</span>
+            <span class="skill-w-25">25%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-25"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>C++</span>
+            <span class="skill-w-25">25%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-25"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>Python</span>
+            <span class="skill-w-20">20%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-20"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>HTML</span>
+            <span class="skill-w-40">40%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-40"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>CSS</span>
+            <span class="skill-w-40">40%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-40"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>Javascript</span>
+            <span class="skill-w-25">25%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-25"></div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-item-text">
+            <span>Java</span>
+            <span class="skill-w-30">30%</span>
+          </div>
+          <div class="skill-progress">
+            <div class="skill-progress-bar w-30"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--------------------------------END OF SKILLS------------------------------------>
 
     <!------------------------------------EXPERIENCE------------------------------------>
     <section class="experience" id="experience">
-        <div class="title">
-            <h2>experience</h2>
-        </div>
-            <p class="skill-text">Balancing work with academic responsibilities can help improve time management skills. This is crucial in the IT field where meeting deadlines and managing projects efficiently is essential.</p>        
-        <div class="row">
-            <div class="col">
-                <header class="exp-title">
-                    <h2>EXPERIENCE</h2>
-                </header>
-    
-                <div class="exp-contents">
-                    <div class="exp-box">
-                        <h2>AUG 2022 - PRESENT</h2>
-                        <h4>SERVICE CREW</h4>
-                        <h3>MCDONALD'S CORPORATION</h3>
-                    </div>
-                    <div class="exp-box">
-                        <h2>PRESENT</h2>
-                        <h4>TECHNICAL COMMITEE CO-HEAD</h4>
-                        <h3>BOLUNTARYONG TUPIANS</h3>
-                    </div> 
-                </div>  
+      <div class="title">
+        <h2>experience</h2>
+      </div>
+      <p class="skill-text">
+        Balancing work with academic responsibilities can help improve time
+        management skills. This is crucial in the IT field where meeting
+        deadlines and managing projects efficiently is essential.
+      </p>
+      <div class="row">
+        <div class="col">
+          <header class="exp-title">
+            <h2>EXPERIENCE</h2>
+          </header>
+
+          <div class="exp-contents">
+            <div class="exp-box">
+              <h2>AUG 2022 - PRESENT</h2>
+              <h4>SERVICE CREW</h4>
+              <h3>MCDONALD'S CORPORATION</h3>
             </div>
-
-            <div class="col">
-                <header class="exp-title">
-                    <h2><br></h2>
-                </header>
-
-                <div class="exp-contents1">
-                    <div class="exp-box1">
-                        <div class="exp-img">
-                            <img src="assets/computer.png">
-                        </div>
-                        <h4><br>'My path has not been determined. I shall have more experience and pass many more milestones.' <br><br>– Agnetha Faltskog</h4>
-                    </div> 
-                </div>  
-            </div> 
+            <div class="exp-box">
+              <h2>PRESENT</h2>
+              <h4>TECHNICAL COMMITEE CO-HEAD</h4>
+              <h3>BOLUNTARYONG TUPIANS</h3>
+            </div>
+          </div>
         </div>
-        
+
+        <div class="col">
+          <header class="exp-title">
+            <h2><br /></h2>
+          </header>
+
+          <div class="exp-contents1">
+            <div class="exp-box1">
+              <div class="exp-img">
+                <img src="assets/computer.png" />
+              </div>
+              <h4>
+                <br />'My path has not been determined. I shall have more
+                experience and pass many more milestones.' <br /><br />– Agnetha
+                Faltskog
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!--------------------------------END OF EXPERIENCE------------------------------------>
 
     <!------------------------------------PROJECTS------------------------------------>
     <section class="project" id="project">
-        <div class="title">
-            <h2>project</h2>
+      <div class="title">
+        <h2>project</h2>
+      </div>
+
+      <div class="proj-contain">
+        <div class="proj-card">
+          <div class="proj-imgBx">
+            <img src="assets/uninfected.png" />
+          </div>
+          <div class="proj-content">
+            <h2>UNINFECTED</h2>
+            <p>
+                This project is a game we made on our Computer Programming class
+                and is made up of C language during our first year in college.
+            </p>
+            <a href="https://github.com/PatriusCastro/Uninfected"><i class="bx bxl-github"></i></a>
+          </div>
         </div>
 
-        <div class="proj-contain">
-            <div class="proj-card">
-                <div class="proj-imgBx">
-                    <img src="assets/uninfected.png">
-                </div>
-                <div class="proj-content">
-                    <h2>UNINFECTED</h2>
-                    <p>lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
-                </div>
-            </div>
-
-            <div class="proj-card">
-                <div class="proj-imgBx">
-                    <img src="assets/typinglegends.png">
-                </div>
-                <div class="proj-content">
-                    <h2>TYPING LEGENDS</h2>
-                    <p>lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
-                </div>
-            </div>
-
-            <div class="proj-card">
-                <div class="proj-imgBx">
-                    <img src="assets/pagbangon.png">
-                </div>
-                <div class="proj-content">
-                    <h2>PAGBANGON WEBSITE</h2>
-                    <p>lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
-                </div>
-            </div>
-
-            <div class="proj-card">
-                <div class="proj-imgBx">
-                    <img src="assets/teatos.png">
-                </div>
-                <div class="proj-content">
-                    <h2>TEATOS WEBSITE</h2>
-                    <p>lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam.</p>
-                </div>
-            </div>
+        <div class="proj-card">
+          <div class="proj-imgBx">
+            <img src="assets/typinglegends.png" />
+          </div>
+          <div class="proj-content">
+            <h2>TYPING LEGENDS</h2>
+            <p>
+                This project is a typing game on our OOP class and is made up
+                of python language during our second year in college.
+            </p>
+            <a href="https://github.com/PatriusCastro/Typing-Legends"><i class="bx bxl-github"></i></a>
+          </div>
         </div>
+
+        <div class="proj-card">
+          <div class="proj-imgBx">
+            <img src="assets/pagbangon.png" />
+          </div>
+          <div class="proj-content">
+            <h2>PAGBANGON WEB</h2>
+            <p>
+                This project is a website about our movie in Multimedia class
+                and is made up of html/css and js language during
+                our 2nd year in college.
+            </p>
+            <a href="https://github.com/PatriusCastro/Movie-Website"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-imgBx">
+            <img src="assets/teatos.png" />
+          </div>
+          <div class="proj-content">
+            <h2>TEATOS WEB (WIP)</h2>
+            <p>
+              This is a shopping website for a cafe that we are currently 
+              working on. It is made up of html/css and js language.
+              We are planning to finish it this year.
+            </p>
+            <a href="https://github.com/PatriusCastro/Teatos"><i class="bx bxl-github"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
     <!--------------------------------END OF PROJECTS------------------------------------>
 
     <!------------------------------------CONTACTS------------------------------------>
     <section class="contact" id="contact">
-        <div class="contact-form">
-            <h1>Let's Get in Touch</h1>
-            <div class="contact-contain">
-                <div class="contact-main">
-                    <div class="contact-content">
-                        <h2>Contact Us</h2>
-                        <form action="#" method="post">
-                            <input type="text" name="name" placeholder="Enter Your Name">
-                            <input type="email" name="name" placeholder="Enter Your Email">
-                            <textarea name="message" placeholder="Enter Your Message"></textarea>
-                            <button type="submit" class="submit-btn">Send <i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                    <div class="form-img">
-                        <img src="assets/contact.png">
-                    </div>
-                </div>
+      <div class="title">
+        <h2>contact</h2>
+      </div>
+      <div class="contact-form">
+        <div class="contact-contain">
+          <div class="contact-main">
+            <div class="contact-content">
+              <h2>Let's Get in Touch</h2>
+              <form action="#" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" />
+                <input
+                  type="email"
+                  name="name"
+                  placeholder="Enter Your Email"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Enter Your Message"
+                ></textarea>
+                <button type="submit" class="submit-btn">
+                  Send <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+              <div class="cont-social">
+                <a href="https://www.facebook.com/josuahcastro4"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a href="https://twitter.com/_impat"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com/_patissss/"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/patrick-josuah-castro-6aba2a27a/"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+                <a href="https://github.com/PatriusCastro"
+                  ><i class="bx bxl-github"></i
+                ></a>
+              </div>
             </div>
+            <div class="form-img">
+              <img src="assets/contact.png" />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--------------------------------END OF CONTACTS------------------------------------>
 
     <!------------------------------------FOOTER------------------------------------>
     <footer>
-
+      <div class="footer-contain">
+        <div class="footsocial">
+          <a href="https://www.facebook.com/josuahcastro4"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://twitter.com/_impat"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/_patissss/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/patrick-josuah-castro-6aba2a27a/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/PatriusCastro"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <div class="footer-nav">
+          <div>
+            <ul class="footnav-links">
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li><a href="#experience">EXPERIENCE</a></li>
+              <li><a href="#project">PROJECTS</a></li>
+              <li><a href="#contact">CONTACTS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright &copy;2023; Designed by Pat Castro</p>
+        </div>
+      </div>
     </footer>
+
     <!--------------------------------END OF FOOTER------------------------------------>
 
-
-
-
-
-      <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
