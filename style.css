@@ -8,6 +8,9 @@ body {
     font-family: "Jost", sans-serif;
     background-size: contain;
     transition: 0.3s ease;
+    background: url(assets/bg.jpg);
+    background-size: contain;
+    overflow-x: hidden;
 }
 
 html {
